@@ -2,7 +2,7 @@
 
 ![Packagist Downloads](https://img.shields.io/packagist/dt/yemeni-open-source/blade-realtime-input?color=blue&label=Downloads&logo=packagist&logoColor=white)
 ![Packagist Version](https://img.shields.io/packagist/v/yemeni-open-source/blade-realtime-input?color=green&label=Version&logo=laravel&logoColor=white)
-[![GitHub license](https://img.shields.io/github/license/yemeni-open-source/blade-realtime-input)](https://github.com/yemeni-open-source/blade-realtime-input/blob/father/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/yemeni-open-source/blade-realtime-input)](https://github.com/Yemeni-Open-Source/blade-realtime-input/blob/father/LICENSE)
 </div>
 
 # Laravel Realtime input
