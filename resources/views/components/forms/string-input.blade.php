@@ -10,6 +10,7 @@
             let inputIndex = "{{ str_replace('[]', '', $name) }}";
             let rules = "{{ $rules }}"
             let data = {
+                name: inputIndex,
                 inputIndex: element.value,
                 rules: {
                     inputIndex: rules

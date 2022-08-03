@@ -5,7 +5,12 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 
 Route::post('validate', function (Request $request) {
-    $validator = Validator::make($request->all(), $request->rules);
+    $validator = Validator::make(
+        $request->all(),
+        $request->rules,
+        [],
+        ['inputIndex' =>  $request->name]
+    );
     if ($validator->fails()) {
         return response()->json($validator->errors());
     }
