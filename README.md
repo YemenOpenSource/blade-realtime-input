@@ -35,7 +35,7 @@ Install the package by using composer:
 
 ## Advance Usage
 
-You can add ```id```, ```class``` and ```type``` to your input like following
+You can add ```id```, ```class``` or ```type``` other HTML attributes to your input like following
 
 ```blade
 <x-realtime-input::forms.string-input name="username" rules="required|min:5" id="user" class="form-control" />
@@ -45,8 +45,12 @@ You can add ```id```, ```class``` and ```type``` to your input like following
 You can add array name like following
 
 ```blade
-<x-realtime-input::forms.string-input name="username[]" rules="required|min:5" id="user" class="form-control" />
+<x-realtime-input::forms.string-input name="username[]" rules="required|min:5" :id="'user'" :class="'form-control'" />
 ```
+
+So to add ```class="form-control"``` it should be ```:class="'form-control'"```
+
+Note the colon ```:``` before the attribute and the single quotation ```"''"``` inside the double quotation
 
 ## License
 
