@@ -1,6 +1,6 @@
 <div>
-    <input name="{{ $name }}" {{ !isset($type) ?'': "type=$type" }} {{ !isset($class) ?'': "class=$class" }} {{ !isset($id) ?'': "id=$id" }} {{ !isset($placeholder) ?'': "$placeholder" }}
-        placeholder="" onchange="stringInputUpdated(this)" />
+    <input name="{{ $name }}" {{ !isset($type) ?'': "type=$type" }} {{ !isset($class) ?'': "class=$class" }} {{ !isset($id) ?'': "id=$id" }} {{ !isset($placeholder) ?'': "placeholder=$placeholder" }}
+        onchange="stringInputUpdated(this)" />
 
     <script>
         function stringInputUpdated(element) {

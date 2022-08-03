@@ -4,18 +4,22 @@ declare(strict_types=1);
 
 namespace YemeniOpenSource\BladeRealtimeInput\Components\Forms;
 
-use Closure;
 use Illuminate\View\Component;
 
 class StringInput extends Component
 {
     public $name;
+
     public $rules;
+
     public $type = 'text';
+
     public $id = '';
+
     public $class = '';
+
     public $placeholder = '';
-    
+
     /**
      * Create the component instance.
      *
@@ -24,10 +28,10 @@ class StringInput extends Component
      * @param  string  $id
      * @param  string  $class
      * @param  string  $placeholder
-     * @param  boolean  $is_repeated
+     * @param  bool  $is_repeated
      * @return void
      */
-    public function __construct($name, $rules, $type='text', $id = '', $class = '', $placeholder = '')
+    public function __construct($name, $rules, $type = 'text', $id = '', $class = '', $placeholder = '')
     {
         $this->name = $name;
         $this->rules = $rules;
