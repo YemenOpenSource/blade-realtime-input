@@ -1,15 +1,15 @@
 <div>
-    <input name="{{ $inputName }}" {{ !isset($type) ?'': "type=$type" }} {{ !isset($class) ?'': "class=$class" }} {{ !isset($id) ?'': "id=$id" }} {{ !isset($placeholder) ?'': "placeholder=$placeholder" }}
+    <input name="{{ $name }}" {{ !isset($type) ?'': "type=$type" }} {{ !isset($class) ?'': "class=$class" }} {{ !isset($id) ?'': "id=$id" }} {{ !isset($placeholder) ?'': "$placeholder" }}
         placeholder="" onchange="stringInputUpdated(this)" />
 
     <script>
         function stringInputUpdated(element) {
-            let inputIndex = "{{ str_replace('[]', '', $inputName) }}";
-            let inputRules = "{{ $inputRules }}"
+            let inputIndex = "{{ str_replace('[]', '', $name) }}";
+            let rules = "{{ $rules }}"
             let data = {
                 inputIndex: element.value,
                 rules: {
-                    inputIndex: inputRules
+                    inputIndex: rules
                 }
             };
             fetch(
