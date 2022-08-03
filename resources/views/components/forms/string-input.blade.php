@@ -6,6 +6,7 @@
         {{ !isset($class) ?'': "class=$class" }}
         {{ !isset($id) ?'': "id=$id" }}
         {{ !isset($placeholder) ?'': "placeholder=$placeholder" }}
+        {{ !isset($onkeypress) ?'': "onkeypress=$onkeypress" }}
         />
 
     <script>
