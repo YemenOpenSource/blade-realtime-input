@@ -23,7 +23,9 @@ This package is tested with Laravel v8 and it should work on Laravel v7 and v9
 
 Install the package by using composer:
 
-> ```composer require yemeni-open-source/blade-realtime-input```
+```bat
+composer require yemeni-open-source/blade-realtime-input
+```
 
 ## Basic Usage
 
