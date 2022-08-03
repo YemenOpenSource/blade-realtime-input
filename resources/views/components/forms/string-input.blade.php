@@ -1,6 +1,6 @@
 <div>
     <input
-        onchange="stringInputUpdated(this)"
+        onchange="{{ str_replace('[]', '', $name) }}_stringInputUpdated(this)"
         name="{{ $name }}"
         {{ !isset($type) ?'': "type=$type" }}
         {{ !isset($class) ?'': "class=$class" }}
@@ -9,7 +9,7 @@
         />
 
     <script>
-        function stringInputUpdated(element) {
+        function {{ str_replace('[]', '', $name) }}_stringInputUpdated(element) {
             let inputIndex = "{{ str_replace('[]', '', $name) }}";
             let rules = "{{ $rules }}"
             let data = {
