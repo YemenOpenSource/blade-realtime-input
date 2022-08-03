@@ -2,11 +2,7 @@
     <input
         onchange="{{ str_replace('[]', '', $name) }}_stringInputUpdated(this)"
         name="{{ $name }}"
-        {{ !isset($type) ?'': "type=$type" }}
-        {{ !isset($class) ?'': "class=$class" }}
-        {{ !isset($id) ?'': "id=$id" }}
-        {{ !isset($placeholder) ?'': "placeholder=$placeholder" }}
-        {{ !isset($onkeypress) ?'': "onkeypress=$onkeypress" }}
+        {{$attributes}}
         />
 
     <script>
