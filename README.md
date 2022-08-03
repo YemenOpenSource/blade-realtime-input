@@ -40,7 +40,7 @@ composer require yemeni-open-source/blade-realtime-input
 You can add ```id```, ```class``` or ```type``` other HTML attributes to your input like following
 
 ```blade
-<x-realtime-input::forms.string-input name="username" rules="required|min:5" id="user" class="form-control" />
+<x-realtime-input::forms.string-input name="username" rules="required|min:5" :id="'user'" :class="'form-control'" />
 ```
 
 
