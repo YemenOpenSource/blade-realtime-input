@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 
 Route::post('validate', function (Request $request) {
+    app()->setLocale($request->lang);
     $validator = Validator::make(
         $request->all(),
         $request->rules,
