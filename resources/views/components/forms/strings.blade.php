@@ -10,6 +10,7 @@
             let inputIndex = "{{ str_replace('[]', '', $name) }}";
             let rules = "{{ $rules }}"
             let data = {
+                lang: '{{app()->getLocale()}}',
                 name: inputIndex,
                 inputIndex: element.value,
                 rules: {

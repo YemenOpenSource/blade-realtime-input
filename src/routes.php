@@ -9,7 +9,7 @@ Route::post('validate', function (Request $request) {
         $request->all(),
         $request->rules,
         [],
-        ['inputIndex' =>  $request->name]
+        ['inputIndex' =>  __('validation.attributes.'.$request->name)]
     );
     if ($validator->fails()) {
         return response()->json($validator->errors());

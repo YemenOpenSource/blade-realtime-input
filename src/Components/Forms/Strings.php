@@ -6,7 +6,7 @@ namespace YemeniOpenSource\BladeRealtimeInput\Components\Forms;
 
 use Illuminate\View\Component;
 
-class StringInput extends Component
+class Strings extends Component
 {
     public $name;
 
@@ -32,6 +32,6 @@ class StringInput extends Component
      */
     public function render()
     {
-        return view('realtime-input::components.forms.string-input');
+        return view('realtime-input::strings');
     }
 }
