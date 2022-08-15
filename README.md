@@ -73,10 +73,6 @@ You can add array name like following
     />
 ```
 
-So to add ```class="form-control"``` it should be ```class="form-control"```
-
-Note the colon ```:``` before the attribute and the single quotation ```"''"``` inside the double quotation
-
 ## Localization
 
 The library works as you familiar with laravel validator you can read laravel validation localization.
