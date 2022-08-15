@@ -15,9 +15,9 @@ This package is tested with Laravel v8 and it should work on Laravel v7 and v9
 
 |||
 |-|-|
-|php| ^7.4&#124;^8.0|
+|php| ^7.4 &#124; ^8.0| &#124; ^8.1
 |Composer| ^2.3|
-|Laravel| ^8.0|
+|Laravel| ^8.0 &#124; ^9.0|
 
 ## Installation
 
@@ -29,30 +29,51 @@ composer require yemeni-open-source/blade-realtime-input
 
 ## Basic Usage
 
-
+The `<input>` tag:
 
 ```blade
 <x-realtime-input::strings name="username" rules="required|min:5" />
 ```
 
-## Advance Usage
-
-You can add ```id```, ```class``` or ```type``` other HTML attributes to your input like following
+The `<select>` tag:
 
 ```blade
-<x-realtime-input::strings rules="required|min:5" name="username" :id="'user'"
-                        :class="'form-control'" />
+<x-realtime-input::options 
+    rules="in:usd,yer"
+    class="btn btn-default custom-select"
+    name="currency" id="currency"
+    >
+    <option value="usd">USD</option>
+    <option value="yer" selected>YER</option>
+    <option value="sar">SAR</option>
+</x-realtime-input::options>
 ```
 
+## Advance Usage
+
+You can add ```id```, ```class``` , ```type``` or other HTML attributes to your input like following
+
+```blade
+<x-realtime-input::strings
+    rules="required|min:5"
+    name="username"
+    id="user"
+    class="form-control"
+    />
+```
 
 You can add array name like following
 
 ```blade
-<x-realtime-input::strings name="username[]" rules="required|min:5" :id="'user'"
-                        :class="'form-control'" />
+<x-realtime-input::strings
+    name="username[]"
+    rules="required|min:5"
+    id="user"
+    class="form-control"
+    />
 ```
 
-So to add ```class="form-control"``` it should be ```:class="'form-control'"```
+So to add ```class="form-control"``` it should be ```class="form-control"```
 
 Note the colon ```:``` before the attribute and the single quotation ```"''"``` inside the double quotation
 
