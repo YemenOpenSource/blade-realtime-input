@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 
-Route::post('validate', function (Request $request) {
+Route::post('realtime-input/validator', function (Request $request) {
     app()->setLocale($request->lang);
     $validator = Validator::make(
         $request->all(),
