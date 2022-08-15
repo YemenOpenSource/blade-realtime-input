@@ -36,6 +36,7 @@
                 // ✅ write the error response
                 var tag = document.createElement("span");
                 tag.style.color = 'red';
+                tag.style.display = 'block';
                 var text = document.createTextNode(json.inputIndex);
                 tag.appendChild(text);
                 element.parentNode.insertBefore(tag, element.nextSibling);
